@@ -117,10 +117,10 @@ footer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  background: #fafafa;
 }
 
 header .content-wrapper {
-  background: whitesmoke;
   align-items: center;
   display: flex;
   flex-flow: row wrap;
@@ -164,7 +164,6 @@ footer .contact {
   justify-content: center;
   padding: 50px 20px;
   width: 100%;
-  background: whitesmoke;
 }
 
 
@@ -197,7 +196,6 @@ footer .copyright {
 }
 
 aside {
-  background: whitesmoke;
   padding: 15px 20px;
 }
 
@@ -213,7 +211,6 @@ aside {
 }
 
 .reviews {
-  background: whitesmoke;
   padding: 50px 20px;
   width: 100%;
 }
@@ -223,11 +220,14 @@ aside {
   flex-flow: row wrap;
 }
 
-/* ------------------ About Page - -------------------- */
+/* ------------------ About and FAQ -------------------- */
 .mission,
 .contact-section,
 .faq {
+  display: flex;
+  flex-flow: row wrap;
   padding: 50px 20px;
+  width: 100%;
 }
 
 .mission {
@@ -327,7 +327,6 @@ aside {
 
   header .content-wrapper {
     align-items: center;
-    background: whitesmoke;
     flex-flow: row nowrap;
     justify-content: space-between;
     padding: 28px 65px;
@@ -356,7 +355,6 @@ aside {
   }
 
   aside {
-    background: whitesmoke;
     align-items: baseline;
     display: flex;
     flex-flow: row wrap;
@@ -381,7 +379,6 @@ aside {
   }
 
   .reviews {
-    background: whitesmoke;
     padding: 95px 65px;
     width: 100%;
   }
@@ -406,9 +403,20 @@ aside {
   .mission,
   .contact-section,
   .faq {
-    padding: 0 65px;
+    justify-content: space-between;
+    padding: 95px 65px;
   }
 
+  .mission p,
+  .contact-section address {
+    width: 47%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact-section h2 {
+    width: 100%;
+  }
 }
 
 
