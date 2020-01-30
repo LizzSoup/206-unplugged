@@ -117,17 +117,18 @@ header .content-wrapper {
 header nav {
   align-items: center;
   display: flex;
+  flex-basis: 60%;
   flex-flow: row wrap;
   justify-content: center;
-  width: 100%;
 }
 
 header nav ul {
   align-items: center;
   display: flex;
+  flex-basis: 60%;
   justify-content: space-around;
+  list-style: none;
   padding: 0;
-  width: 100%;
 }
 
 footer .content-wrapper {
@@ -153,26 +154,33 @@ footer .social {
   justify-content: center;
 }
 
-footer .social-icons {
+footer .social-icon {
   display: flex;
 }
 
 /* ---------------- Main Content area -------------- */
+.content-wrapper {
+  align-items: center;
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  justify-content: center;
+}
+
 .hero-area {
   align-items: center;
   display: flex;
+  width: 90%;
   flex-flow: row wrap;
   justify-content: center;
 }
 
-.aside {
-  display: flex;
+aside {
+  width: 90%;
 }
 
 .features {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  width: 90%;
 }
 
 .feature-item {
@@ -181,19 +189,23 @@ footer .social-icons {
   justify-content: center;
 }
 
+.reviews {
+  width: 90%;
+}
+
 /* ------------------ About Page - -------------------- */
 .mission {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  width: 90%;
+}
+
+.contact-section {
+  width: 90%;
 }
 
 
 /* ----------------------- FAQ Page--------------------------- */
 .faq {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+  width: 90%;
 }
 
 /* ==========================================================================
