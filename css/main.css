@@ -98,6 +98,12 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* -------------- Base Header - Footer Styles------------ */
+html {}
+
+body {
+  height: 100%;
+}
+
 header,
 footer {
   align-items: center;
@@ -106,20 +112,24 @@ footer {
   justify-content: center;
 }
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  width: 100%;
+  margin: 0;
 }
 
 header nav {
   align-items: center;
   display: flex;
-  flex-basis: 60%;
   flex-flow: row wrap;
   justify-content: center;
+  width: 65%;
 }
 
 header nav ul {
@@ -131,10 +141,13 @@ header nav ul {
   padding: 0;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .content-wrapper {
   align-items: center;
   display: flex;
-  flex-basis: 100%;
   flex-flow: row wrap;
   justify-content: center;
 }
@@ -144,18 +157,26 @@ footer .contact {
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  width: 100%;
 }
 
 
 footer .social {
   align-items: center;
   display: flex;
-  flex-basis: 100%;
   justify-content: center;
+  width: 100%;
 }
 
 footer .social-icon {
   display: flex;
+}
+
+footer .copyright {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 /* ---------------- Main Content area -------------- */
@@ -163,49 +184,46 @@ footer .social-icon {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
-  width: 100%;
   justify-content: center;
 }
 
 .hero-area {
   align-items: center;
   display: flex;
-  width: 90%;
   flex-flow: row wrap;
   justify-content: center;
+  padding: 0 20px;
 }
 
 aside {
-  width: 90%;
+  padding: 0 20px;
 }
 
 .features {
-  width: 90%;
+  padding: 0 20px;
 }
 
-.feature-item {
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.features p {
+  margin: 0;
 }
 
 .reviews {
-  width: 90%;
+  padding: 0 20px;
 }
 
 /* ------------------ About Page - -------------------- */
 .mission {
-  width: 90%;
+  padding: 0 20px;
 }
 
 .contact-section {
-  width: 90%;
+  padding: 20px;
 }
 
 
 /* ----------------------- FAQ Page--------------------------- */
 .faq {
-  width: 90%;
+  padding: 20px;
 }
 
 /* ==========================================================================
