@@ -98,10 +98,17 @@ textarea {
    Author's custom styles
    ========================================================================== */
 /* -------------- Base Header - Footer Styles------------ */
+* {
+  box-sizing: border-box;
+}
+
 html {}
 
 body {
   height: 100%;
+  margin: 0;
+  padding: 0;
+  border: 10px solid #333;
 }
 
 header,
@@ -112,16 +119,14 @@ footer {
   justify-content: center;
 }
 
-header {
-  padding: 15px 0;
-}
-
 header .content-wrapper {
+  background: whitesmoke;
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin: 0;
+  width: 100%;
 }
 
 header nav {
@@ -141,10 +146,6 @@ header nav ul {
   padding: 0;
 }
 
-footer p {
-  margin: 0;
-}
-
 footer .content-wrapper {
   align-items: center;
   display: flex;
@@ -152,12 +153,18 @@ footer .content-wrapper {
   justify-content: center;
 }
 
+footer p {
+  margin: 0;
+}
+
 footer .contact {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
+  padding: 50px 20px;
   width: 100%;
+  background: whitesmoke;
 }
 
 
@@ -180,27 +187,25 @@ footer .copyright {
 }
 
 /* ---------------- Main Content area -------------- */
-.content-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-}
 
 .hero-area {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 0 20px;
+  padding: 50px 20px;
 }
 
 aside {
-  padding: 0 20px;
+  background: whitesmoke;
+  padding: 15px 20px;
 }
 
 .features {
-  padding: 0 20px;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px 20px;
+  width: 100%;
 }
 
 .features p {
@@ -208,22 +213,25 @@ aside {
 }
 
 .reviews {
-  padding: 0 20px;
+  background: whitesmoke;
+  padding: 50px 20px;
+  width: 100%;
+}
+
+.review-content {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 /* ------------------ About Page - -------------------- */
-.mission {
-  padding: 0 20px;
-}
-
-.contact-section {
-  padding: 20px;
-}
-
-
-/* ----------------------- FAQ Page--------------------------- */
+.mission,
+.contact-section,
 .faq {
-  padding: 20px;
+  padding: 50px 20px;
+}
+
+.mission {
+  background: lightgrey;
 }
 
 /* ==========================================================================
@@ -315,16 +323,96 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media screen and (min-width: 768px) {
+
+  header .content-wrapper {
+    align-items: center;
+    background: whitesmoke;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    padding: 28px 65px;
+    width: 100%;
+  }
+
+  .logo {
+    width: 47%;
+    justify-content: flex-start;
+  }
+
+  header nav {
+    justify-content: flex-end;
+    width: 47%;
+  }
+
+  .hero-area {
+    margin: 0;
+    justify-content: flex-start;
+    padding: 95px 65px;
+    width: 100%;
+  }
+
+  .hero-area h1 {
+    margin: 0;
+  }
+
+  aside {
+    background: whitesmoke;
+    align-items: baseline;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    padding: 45px 65px;
+    width: 100%;
+  }
+
+  .signup,
+  .form {
+    width: 47%;
+  }
+
+  .features {
+    justify-content: space-between;
+    padding: 95px 65px;
+    width: 100%;
+  }
+
+  .feature-item {
+    width: 47%;
+  }
+
+  .reviews {
+    background: whitesmoke;
+    padding: 95px 65px;
+    width: 100%;
+  }
+
+  .review-content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+  }
+
+  .review-image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .review-image,
+  .review-copy {
+    width: 47%;
+  }
+
+  .mission,
+  .contact-section,
+  .faq {
+    padding: 0 65px;
+  }
+
 }
 
-@media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+
+@Media screen and (min-width: 1200px) {}
 
 /* ==========================================================================
    Print styles.
