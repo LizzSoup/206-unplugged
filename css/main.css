@@ -112,7 +112,6 @@ body {
   height: 100%;
   margin: 0;
   padding: 0;
-  border: 10px solid #333;
 }
 
 ul {
@@ -158,10 +157,11 @@ address {
 header,
 footer {
   align-items: center;
+  background: #202322;
+  color: #E2E3ED;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  background: #fafafa;
 }
 
 header .content-wrapper {
@@ -169,7 +169,7 @@ header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin: 0;
+  padding: 15px 0;
   width: 100%;
 }
 
@@ -198,10 +198,6 @@ footer .content-wrapper {
   flex-flow: row wrap;
   justify-content: center;
   width: 100%;
-}
-
-footer p {
-  margin: 0;
 }
 
 footer .contact,
@@ -236,9 +232,34 @@ footer .copyright {
   padding: 50px 20px;
 }
 
-aside {
-  padding: 15px 20px;
+/* ----------------------- Form ---------------------------- */
+aside .form {
+  margin-top: 30px;
 }
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* -----------------Features --------------------*/
 
 .features {
   display: flex;
@@ -258,9 +279,12 @@ aside {
 
 .features p {
   margin: 0;
+  text-align: center;
 }
 
 .reviews {
+  background: #2A423A;
+  color: #E2E3ED;
   padding: 50px 20px;
   width: 100%;
 }
@@ -274,15 +298,26 @@ aside {
 .mission,
 .contact-section,
 .faq {
+  color: #E2E3ED;
   display: flex;
   flex-flow: row wrap;
   padding: 50px 20px;
   width: 100%;
 }
 
+.mission,
+.faq {
+  background: #527158;
+}
+
 .map {
   background: lightcyan;
 }
+
+.contact-section {
+  background-color: #2a423a;
+}
+
 
 /* ==========================================================================
    Helper classes
@@ -491,6 +526,11 @@ aside {
   }
 
   /* Main Content */
+  h1 {
+    width: 60%;
+  }
+
+  /* Features */
   .feature-items {
     align-items: center;
     display: flex;
@@ -511,11 +551,7 @@ aside {
     width: 50%;
   }
 
-  /* 
-  .feature-middle {
-    margin: 50px;
-  } */
-
+  /* FAQ */
   .faq-content {
     width: 47%
   }
