@@ -158,20 +158,13 @@ footer p {
   margin: 0;
 }
 
-footer .contact {
+footer .contact,
+footer .social {
   align-items: center;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
   padding: 50px 20px;
-  width: 100%;
-}
-
-
-footer .social {
-  align-items: center;
-  display: flex;
-  justify-content: center;
   width: 100%;
 }
 
@@ -441,25 +434,17 @@ aside {
 
 @Media screen and (min-width: 1200px) {
 
-  .contact-section,
-  .hero-area,
-  .features,
-  .reviews,
-  .mission,
-  .contact-section,
-  .map,
-  .faq {
-    padding: 100px 120px;
-  }
-
+  /* Header and Footer */
   footer .content-wrapper {
     justify-content: space-between;
   }
 
   footer .contact,
   footer .social {
-    width: 33%;
+    width: 30%;
   }
+
+  /* Main Content */
 
   .feature-items {
     align-items: center;
