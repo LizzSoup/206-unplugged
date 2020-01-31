@@ -241,8 +241,8 @@ aside {
   width: 100%;
 }
 
-.mission {
-  background: lightgrey;
+.map {
+  background: lightcyan;
 }
 
 /* ==========================================================================
@@ -475,6 +475,10 @@ aside {
 
   .feature-middle {
     margin: 50px;
+  }
+
+  .faq-content {
+    width: 50%;
   }
 }
 
