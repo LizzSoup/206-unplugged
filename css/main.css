@@ -97,7 +97,7 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* -------------- Base Header - Footer Styles------------ */
+/* -------------------- Global Styles -----------------------*/
 * {
   box-sizing: border-box;
 }
@@ -146,14 +146,20 @@ p {
   line-height: 1.5em;
 }
 
-img {}
+img {
+  width: 100%;
+}
 
-figure {}
+figure {
+  margin: 0;
+}
 
 address {
   font-style: normal;
 }
 
+/* --------------------Mobile Styles ---------------------- */
+/* -------------- Base Header - Footer Styles------------ */
 header,
 footer {
   align-items: center;
@@ -169,7 +175,22 @@ header .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
+}
+
+header figure {
+  align-items: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   padding: 15px 0;
+}
+
+.header-divider {
+  height: .5px;
+  background: #444;
   width: 100%;
 }
 
@@ -180,7 +201,7 @@ header nav {
   font-weight: 700;
   justify-content: center;
   text-transform: uppercase;
-  width: 65%;
+  width: 100%;
 }
 
 header nav ul {
@@ -436,6 +457,10 @@ input[type=button] {
     justify-content: flex-start;
   }
 
+  .header-divider {
+    display: none;
+  }
+
   header nav {
     justify-content: flex-end;
     width: 47%;
@@ -498,7 +523,7 @@ input[type=button] {
 
   .review-image,
   .review-copy {
-    width: 47%;
+    width: 46%;
   }
 
   /* About Page and FAQ */
