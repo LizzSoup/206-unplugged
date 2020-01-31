@@ -224,15 +224,26 @@ footer .copyright {
 /* ---------------- Main Content area -------------- */
 
 .hero-area {
-  align-items: center;
-  background: rgb(228, 223, 216);
+  background: url("../img/jake-melara-30679-unsplash.jpg") center no-repeat #2a423a;
+  background-size: cover;
+  color: #E2E3ED;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  min-height: 600px;
   padding: 50px 20px;
 }
 
 /* ----------------------- Form ---------------------------- */
+aside {
+  background-color: #527158;
+  color: #E2E3ED;
+  padding: 25px 20px;
+}
+
+aside h3 {
+  margin: 0;
+}
+
 aside .form {
   margin-top: 30px;
 }
@@ -262,11 +273,13 @@ input[type=button] {
 /* -----------------Features --------------------*/
 
 .features {
+  background: url("../img/rawpixel-800820-unsplash1.jpg") center no-repeat #333;
+  background-size: cover;
+  color: #E2E3ED;
   display: flex;
   flex-wrap: wrap;
   padding: 50px 20px;
   width: 100%;
-  background: whitesmoke;
 }
 
 .feature-items {
