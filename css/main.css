@@ -102,13 +102,57 @@ textarea {
   box-sizing: border-box;
 }
 
-html {}
+html {
+  font-size: 16px;
+}
 
 body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
   height: 100%;
   margin: 0;
   padding: 0;
   border: 10px solid #333;
+}
+
+ul {
+  font-size: 1.125em;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 3.75em;
+}
+
+h2,
+h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h2 {
+  font-size: 2.25em;
+}
+
+h3 {
+  font-size: 1.875em;
+}
+
+p {
+  font-size: 1.125em;
+  line-height: 1.5em;
+}
+
+img {}
+
+figure {}
+
+address {
+  font-style: normal;
 }
 
 header,
@@ -133,7 +177,9 @@ header nav {
   align-items: center;
   display: flex;
   flex-flow: row wrap;
+  font-weight: 700;
   justify-content: center;
+  text-transform: uppercase;
   width: 65%;
 }
 
@@ -445,22 +491,30 @@ aside {
   }
 
   /* Main Content */
-
   .feature-items {
     align-items: center;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: center;
     width: 100%;
   }
 
   .feature-item {
-    width: 27%;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-basis: 33.33%
   }
 
+  .feature-item p {
+    width: 50%;
+  }
+
+  /* 
   .feature-middle {
     margin: 50px;
-  }
+  } */
 
   .faq-content {
     width: 47%
