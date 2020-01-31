@@ -151,6 +151,7 @@ footer .content-wrapper {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 100%;
 }
 
 footer p {
@@ -189,6 +190,7 @@ footer .copyright {
 
 .hero-area {
   align-items: center;
+  background: rgb(228, 223, 216);
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -201,9 +203,18 @@ aside {
 
 .features {
   display: flex;
-  flex-flow: row wrap;
+  flex-wrap: wrap;
   padding: 50px 20px;
   width: 100%;
+  background: whitesmoke;
+}
+
+.feature-items {
+  flex-direction: row-reverse;
+}
+
+.feature-item {
+  padding: 25px 0;
 }
 
 .features p {
@@ -354,6 +365,7 @@ aside {
     margin: 0;
   }
 
+  /* Sign Up Section */
   aside {
     align-items: baseline;
     display: flex;
@@ -368,6 +380,7 @@ aside {
     width: 47%;
   }
 
+  /* Features Section */
   .features {
     justify-content: space-between;
     padding: 95px 65px;
@@ -378,6 +391,7 @@ aside {
     width: 47%;
   }
 
+  /* Reviews Section */
   .reviews {
     padding: 95px 65px;
     width: 100%;
@@ -400,8 +414,10 @@ aside {
     width: 47%;
   }
 
+  /* About Page and FAQ */
   .mission,
   .contact-section,
+  .map,
   .faq {
     justify-content: space-between;
     padding: 95px 65px;
@@ -414,13 +430,53 @@ aside {
     margin: 0;
   }
 
-  .contact-section h2 {
+  .contact-section h2,
+  .faq h2 {
+    margin-top: 0;
+    padding-top: 0;
     width: 100%;
   }
 }
 
 
-@Media screen and (min-width: 1200px) {}
+@Media screen and (min-width: 1200px) {
+
+  .contact-section,
+  .hero-area,
+  .features,
+  .reviews,
+  .mission,
+  .contact-section,
+  .map,
+  .faq {
+    padding: 100px 120px;
+  }
+
+  footer .content-wrapper {
+    justify-content: space-between;
+  }
+
+  footer .contact,
+  footer .social {
+    width: 33%;
+  }
+
+  .feature-items {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .feature-item {
+    width: 27%;
+  }
+
+  .feature-middle {
+    margin: 50px;
+  }
+}
 
 /* ==========================================================================
    Print styles.
