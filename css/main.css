@@ -303,12 +303,14 @@ input[type=button] {
   width: 100%;
 }
 
-.feature-items {
-  flex-direction: row-reverse;
-}
-
 .feature-item {
   padding: 25px 0;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin: 0;
+  padding-bottom: 40px;
 }
 
 .features p {
@@ -505,15 +507,30 @@ input[type=button] {
     width: 47%;
   }
 
-  /* Features Section */
+  /* Features */
   .features {
-    justify-content: space-between;
     padding: 95px 65px;
+  }
+
+
+  .feature-items {
+    align-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
     width: 100%;
   }
 
   .feature-item {
-    width: 47%;
+    align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    flex-basis: 47%;
+  }
+
+  .feature-item p {
+    width: 50%;
   }
 
   /* Reviews Section */
@@ -585,12 +602,16 @@ input[type=button] {
   }
 
   /* Features */
+  .features {
+    padding: 120px 90px;
+  }
+
+
   .feature-items {
-    align-items: center;
+    align-items: flex-start;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    width: 100%;
+    flex-flow: row wrap;
+    justify-content: baseline;
   }
 
   .feature-item {
@@ -598,11 +619,13 @@ input[type=button] {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    flex-basis: 33.33%
+    flex-basis: 33%;
   }
 
-  .feature-item p {
-    width: 50%;
+  .feature i,
+  .feature p {
+    padding: 25px 0;
+    margin: 0;
   }
 
   /* About and FAQ */
