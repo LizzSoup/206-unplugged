@@ -622,6 +622,11 @@ input[type=button] {
     justify-content: space-between;
   }
 
+  footer .contact,
+  footer .social {
+    width: 30%;
+  }
+
   /* Main Content */
   h1 {
     width: 60%;
