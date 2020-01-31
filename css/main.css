@@ -200,6 +200,7 @@ header nav {
   flex-flow: row wrap;
   font-weight: 700;
   justify-content: center;
+  padding: 20px 0;
   text-transform: uppercase;
   width: 100%;
 }
@@ -210,7 +211,7 @@ header nav ul {
   flex-basis: 60%;
   justify-content: space-around;
   list-style: none;
-  padding: 0;
+  margin: 0;
 }
 
 footer .content-wrapper {
