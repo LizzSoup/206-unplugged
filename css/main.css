@@ -185,7 +185,7 @@ header figure {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 15px 0;
+  padding: 20px 0;
 }
 
 .header-divider {
@@ -225,14 +225,36 @@ footer .contact,
 footer .social {
   align-items: center;
   display: flex;
-  flex-flow: column wrap;
   justify-content: center;
-  padding: 50px 20px;
+  flex-flow: column wrap;
   width: 100%;
 }
 
-footer .social-icon {
-  display: flex;
+footer .contact {
+  padding: 50px 20px;
+}
+
+footer .social {
+  padding: 0 20px 50px 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+footer .social-icons p {
+  align-items: center;
+  display: inline;
+  align-self: auto;
+  justify-content: center;
+  padding: 10px;
+}
+
+footer .social i {
+  background: #202322;
+  color: #e2e3ed;
+  font-size: 2em;
+  margin: 0 15px;
 }
 
 footer .copyright {
