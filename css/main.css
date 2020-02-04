@@ -188,12 +188,6 @@ header figure {
   padding: 20px 0;
 }
 
-.header-divider {
-  height: .5px;
-  background: #444;
-  width: 100%;
-}
-
 header nav {
   align-items: center;
   display: flex;
@@ -203,6 +197,7 @@ header nav {
   padding: 20px 0;
   text-transform: uppercase;
   width: 100%;
+  border-top: .5px solid #444;
 }
 
 header nav ul {
@@ -497,13 +492,10 @@ input[type=button] {
     justify-content: flex-start;
   }
 
-  .header-divider {
-    display: none;
-  }
-
   header nav {
     justify-content: flex-end;
     width: 47%;
+    border-top: none;
   }
 
   footer .contact,
