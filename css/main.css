@@ -167,15 +167,11 @@ footer {
   color: #E2E3ED;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  width: 100%;
 }
 
-header .content-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
+header {
   justify-content: center;
-  width: 100%;
 }
 
 header figure {
@@ -209,12 +205,8 @@ header nav ul {
   margin: 0;
 }
 
-footer .content-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
+footer {
   justify-content: space-between;
-  width: 100%;
   text-align: center;
 }
 
@@ -479,12 +471,10 @@ input[type=button] {
 @media screen and (min-width: 768px) {
 
   /* Header and Footer */
-  header .content-wrapper {
-    align-items: center;
-    flex-flow: row nowrap;
+  header {
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 28px 65px;
-    width: 100%;
   }
 
   .logo {
@@ -608,12 +598,6 @@ input[type=button] {
 
 
 @Media screen and (min-width: 1200px) {
-
-  /* Header and Footer */
-  footer .content-wrapper {
-    justify-content: space-between;
-  }
-
   /* Main Content */
   h1 {
     width: 60%;
