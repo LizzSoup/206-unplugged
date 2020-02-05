@@ -107,9 +107,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 1em;
-  height: 100%;
+  font-family: "Open Sans", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -147,7 +145,7 @@ p {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 figure {
@@ -167,31 +165,15 @@ footer {
   color: #E2E3ED;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  width: 100%;
 }
 
-header .content-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
+header {
   justify-content: center;
-  width: 100%;
 }
 
 header figure {
-  align-items: center;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   padding: 20px 0;
-}
-
-.header-divider {
-  height: .5px;
-  background: #444;
-  width: 100%;
 }
 
 header nav {
@@ -203,6 +185,7 @@ header nav {
   padding: 20px 0;
   text-transform: uppercase;
   width: 100%;
+  border-top: .5px solid #444;
 }
 
 header nav ul {
@@ -214,12 +197,8 @@ header nav ul {
   margin: 0;
 }
 
-footer .content-wrapper {
-  align-items: center;
-  display: flex;
-  flex-flow: row wrap;
+footer {
   justify-content: space-between;
-  width: 100%;
   text-align: center;
 }
 
@@ -484,12 +463,10 @@ input[type=button] {
 @media screen and (min-width: 768px) {
 
   /* Header and Footer */
-  header .content-wrapper {
-    align-items: center;
-    flex-flow: row nowrap;
+  header {
+    flex-wrap: nowrap;
     justify-content: space-between;
     padding: 28px 65px;
-    width: 100%;
   }
 
   .logo {
@@ -497,13 +474,10 @@ input[type=button] {
     justify-content: flex-start;
   }
 
-  .header-divider {
-    display: none;
-  }
-
   header nav {
     justify-content: flex-end;
     width: 47%;
+    border-top: none;
   }
 
   footer .contact,
@@ -616,12 +590,6 @@ input[type=button] {
 
 
 @Media screen and (min-width: 1200px) {
-
-  /* Header and Footer */
-  footer .content-wrapper {
-    justify-content: space-between;
-  }
-
   /* Main Content */
   h1 {
     width: 60%;
